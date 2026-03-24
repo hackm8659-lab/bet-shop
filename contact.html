@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop | Contact Us</title>
+    <style>
+        /* Basic Reset - Consistent with the site design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            color: #ff6b6b;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: #ff6b6b;
+        }
+
+        /* Contact Section Layout */
+        .contact-container {
+            padding: 60px 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-header h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+        }
+
+        /* Info Sidebar */
+        .contact-info {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-group {
+            margin-bottom: 25px;
+        }
+
+        .info-group h3 {
+            color: #ff6b6b;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .info-group p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: #ff6b6b;
+        }
+
+        .submit-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff5252;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 30px 5%;
+            margin-top: 60px;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 850px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul li {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Pet Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pets.html">Pets</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-header">
+            <h2>Contact Us</h2>
+            <p>Have questions? We'd love to hear from you and your pets!</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Information Section -->
+            <section class="contact-info">
+                <div class="info-group">
+                    <h3>Visit Us</h3>
+                    <p>123 Pet Lane, Animal Valley</p>
+                    <p>Paw City, PC 54321</p>
+                </div>
+
+                <div class="info-group">
+                    <h3>Call Us</h3>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+
+                <div class="info-group">
+                    <h3>Email Us</h3>
+                    <p>hello@petshop.com</p>
+                </div>
+
+                <div class="info-group">
+                    <h3>Opening Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 7:00 PM</p>
+                    <p>Sat: 10:00 AM - 5:00 PM</p>
+                    <p>Sun: Closed</p>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pet Shop. All rights reserved. | Caring for your best friends.</p>
+    </footer>
+
+</body>
+</html>
